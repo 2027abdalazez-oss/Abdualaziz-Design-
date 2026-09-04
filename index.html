@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ARCHI07 | عمارة وتصميم وتنفيذ</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f3ef;
+      color: #171717;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      font-size: 15px;
+    }
+
+    .hero {
+      min-height: 500px;
+      padding: 80px 7%;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+        url("https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #eee;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #e67e22;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 55px 7%;
+    }
+
+    .title {
+      font-size: 32px;
+      margin-bottom: 30px;
+      border-right: 5px solid #e67e22;
+      padding-right: 12px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .category {
+      background: white;
+      padding: 25px;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 3px 15px rgba(0,0,0,.07);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .project {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+    }
+
+    .project img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    .project h3 {
+      margin-bottom: 8px;
+    }
+
+    .project p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 35px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    @media (max-width: 800px) {
+      nav {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .categories,
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ARCHI07</div>
+
+  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#projects">المشاريع</a>
+    <a href="#categories">التصميم</a>
+    <a href="#about">عن ARCHI07</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>ARCHI07</h1>
+
+    <p>
+      العمارة من الفكرة إلى التنفيذ.
+      منصة عربية تجمع التصميم، العمارة، المواد، والتنفيذ الميداني.
+    </p>
+
+    <a href="#projects" class="button">
+      استكشف المشاريع
+    </a>
+  </div>
+</section>
+
+<section id="categories">
+
+  <h2 class="title">استكشف عالم العمارة</h2>
+
+  <div class="categories">
+
+    <div class="category">🏠 مشاريع معمارية</div>
+
+    <div class="category">📐 تصميم وواجهات</div>
+
+    <div class="category">🧱 مواد وتنفيذ</div>
+
+    <div class="category">🌿 لاندسكيب</div>
+
+  </div>
+
+</section>
+
+<section id="projects">
+
+  <h2 class="title">أحدث المشاريع</h2>
+
+  <div class="projects">
+
+    <article class="project">
+
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80">
+
+      <div class="project-content">
+
+        <h3>تصميم منزل معاصر</h3>
+
+        <p>
+          فكرة معمارية تجمع بين البساطة والوظيفة والإضاءة الطبيعية.
+        </p>
+
+      </div>
+
+    </article>
+
+    <article class="project">
+
+      <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80">
+
+      <div class="project-content">
+
+        <h3>التصميم الداخلي</h3>
+
+        <p>
+          دراسة الفراغات والخامات والأثاث بأسلوب معماري حديث.
+        </p>
+
+      </div>
+
+    </article>
+
+    <article class="project">
+
+      <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80">
+
+      <div class="project-content">
+
+        <h3>من الموقع إلى التنفيذ</h3>
+
+        <p>
+          محتوى ميداني عن مراحل البناء والتنفيذ ومواد التشطيب.
+        </p>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+<section id="about">
+
+  <h2 class="title">عن ARCHI07</h2>
+
+  <p>
+    ARCHI07 منصة تهتم بالعمارة والتصميم والتنفيذ،
+    وتهدف إلى تقديم محتوى بصري وهندسي مفيد للطلاب
+    والمهندسين وكل المهتمين بمجال البناء.
+  </p>
+
+</section>
+
+<footer>
+
+  <p>
+    © 2026 <strong>ARCHI07</strong> — Architecture • Design • Construction
+  </p>
+
+</footer>
+
+</body>
+</html>
